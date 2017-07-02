@@ -13,6 +13,10 @@ cat <<EOF > /tmp/git2consul.json
     "url" : "${gitRepository}",
     "source_root": "${gitSourceRoot}",
     "branches" : ["${gitBranch}"],
+    "include_branch_name": false,
+    "expand_keys": true,
+    "ignore_file_extension": true,
+    "variables_enabled": false,
     "hooks": [{
       "type" : "polling",
       "interval" : "1"

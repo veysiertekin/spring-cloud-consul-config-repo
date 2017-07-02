@@ -15,4 +15,14 @@ Check configurations:
 $ vi git-and-consul.config
 ```
 
+Be sure to `git2consul.sh` is executable.
 
+```bash
+$ chmod +x ./git2consul.sh
+```
+
+Let's push application properties to `consul`!
+
+```bash
+$ ./git2consul.sh
+```
